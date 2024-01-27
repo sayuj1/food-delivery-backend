@@ -15,14 +15,14 @@ connectDB();
 const app = express();
 
 //* Enable cors
-const corsOptions = {
-  credentials: true,
-  origin:
-    process.env.NODE_ENV === 'production'
-      ? process.env.PROD_ORIGIN
-      : process.env.DEV_ORIGIN,
-};
-app.use(cors(corsOptions));
+// const corsOptions = {
+//   credentials: true,
+//   origin:
+//     process.env.NODE_ENV === 'production'
+//       ? process.env.PROD_ORIGIN
+//       : process.env.DEV_ORIGIN,
+// };
+app.use(cors());
 
 //* Body parser
 app.use(express.json());
@@ -38,5 +38,5 @@ configRoutes(app);
 const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () =>
-  console.log(`Server listening at PORT: ${PORT} ${process.env.PROD_ORIGIN} ${process.env.NODE_ENV}`)
+  console.log(`Server listening at PORT: ${PORT}`)
 );
