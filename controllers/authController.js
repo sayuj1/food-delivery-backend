@@ -66,7 +66,6 @@ exports.logout = async (req, res) => {
     if (process.env.NODE_ENV === 'production') {
       options.secure = true;
     }
-
     res.status(200).cookie('token', 'none', options).json({ success: true, token: 'none' });
   } catch (error) {
     res.status(500).json({ success: false, error: 'Something went wrong' });

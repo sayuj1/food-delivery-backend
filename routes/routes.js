@@ -1,9 +1,9 @@
 const authRoute = require("./auth");
-const userRoute = require("./user");
+const restaurantRoute = require('./restaurant')
 
 const configRoutes = app => {
   app.use("/auth", authRoute);
-  app.use("/user", userRoute);
+  app.use("/restaurants", restaurantRoute)
 };
 
 module.exports = { configRoutes };
