@@ -38,5 +38,5 @@ configRoutes(app);
 const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () =>
-  console.log(`Server listening at PORT: ${PORT}`)
+  console.log(`Server listening at PORT: ${PORT} ${process.env.PROD_ORIGIN} ${process.env.NODE_ENV}`)
 );
