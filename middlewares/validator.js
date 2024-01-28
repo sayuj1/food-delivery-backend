@@ -10,7 +10,7 @@ exports.validateAuthInputFields = (req, res, next) => {
   if (password.trim() === "") {
     allErrors.password = "Password is Required";
   } else if (password.trim().length < 8) {
-    allErrors.password = "Password shoulbe have mininum 8 Characters";
+    allErrors.password = "Password should have mininum 8 Characters";
   }
 
   if (Object.values(allErrors).some((error) => error)) {
