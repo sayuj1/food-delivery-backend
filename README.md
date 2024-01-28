@@ -13,8 +13,8 @@ Welcome to the Food Delivery Backend, a Node.js application that serves as the b
     -   **Register:** Enable new users to register via the `/auth/register` endpoint.
 
 -   **Restaurant Management:**    
-    -   **View Restaurants:** Retrieve a list of restaurants using the `/restaurants/view` endpoint.
     -   **Add Restaurant:** Add new restaurants with the `/restaurants/add` endpoint.
+    -   **View Restaurants:** Retrieve a list of restaurants using the `/restaurants/view` endpoint.
     -   **View Discounts:** Retrieve available discounts with the `/restaurants/viewDiscounts` endpoint.
     -   **View Categories:** Get a list of restaurant categories via the `/viewCategories` endpoint.
 
