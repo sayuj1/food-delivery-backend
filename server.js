@@ -14,14 +14,6 @@ connectDB();
 
 const app = express();
 
-//* Enable cors
-// const corsOptions = {
-//   credentials: true,
-//   origin:
-//     process.env.NODE_ENV === 'production'
-//       ? process.env.PROD_ORIGIN
-//       : process.env.DEV_ORIGIN,
-// };
 app.use(cors());
 
 //* Body parser
