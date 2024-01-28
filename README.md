@@ -20,10 +20,10 @@ Welcome to the Food Delivery Backend, a Node.js application that serves as the b
 
 ## Tech Stack
 
--   **Node.js:** 
--   **Express:** 
--   **MongoDB:**
--   **Mongoose:**
+-   **Node.js** 
+-   **Express** 
+-   **MongoDB**
+-   **Mongoose**
 
 ## Setup
 
